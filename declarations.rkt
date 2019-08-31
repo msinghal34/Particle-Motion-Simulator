@@ -31,10 +31,10 @@
 ;Global declarations
 
 (define theta 2)     ;decides which particles are deemed close to one another
-(define iter 10)    ;decides number of iterations to run
+(define iter 1000)    ;decides number of iterations to run
 (define g 18)    ;gravitational constant in UniverseX
-(define timeslice .01) ;the simulation is updated after unit time
-(define drawtime 1)    ;Draw every drawtime iterations
+(define timeslice .1) ;the simulation is updated after unit time
+(define drawtime 10)    ;Draw every drawtime iterations
 
 (define (zipwith f l1 l2)
   (cond [(or (null? l1) (null? l2)) '()] ;
